@@ -11,12 +11,12 @@ const AddTodo = () => {
       </button>
       {modaOpened && (
         <PureModal
-          header="Your header"
+          header="Add Message"
           width="40%"
           footer={
-            <div>
-              <button>Cancel</button>
-              <button>Save</button>
+            <div className="action-modal">
+              <button className="btn-cancel">Cancel</button>
+              <button className="btn-save">Save</button>
             </div>
           }
           isOpen={true}

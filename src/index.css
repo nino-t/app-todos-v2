@@ -72,3 +72,35 @@ body {
   color: #fff;
   border: 0;
 }
+
+.action-modal {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.btn-cancel {
+  background-color: #857272;
+  border: 0;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  color: #fff;
+  margin: 5px;
+}
+
+.btn-save {
+  background-color: #857272;
+  border: 0;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  color: #fff;
+  margin: 5px;
+}
+
+.pure-modal .close {
+  background-color: #d8cbcb;
+  color: #fff;
+  font-size: 25px;
+}
