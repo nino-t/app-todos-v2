@@ -16,3 +16,59 @@ body {
   border: 1px solid #e74c3c;
   padding: 1rem;
 }
+
+.todo-item {
+  background-color: #eee8e89d;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.message {
+  background-color: #b8afaf;
+  height: 50px;
+  border-radius: 6px;
+  width: 100%;
+  margin: 10px;
+  color: #fff;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  padding-left: 5px;
+}
+
+.action {
+  margin: 10px;
+  display: flex;
+}
+
+.btn-edit {
+  background-color: #0099ff;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin: 5px;
+}
+.btn-delete {
+  background-color: #ff0000;
+  border: 0;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: #fff;
+  margin: 5px;
+}
+
+.btn-add {
+  width: 100%;
+  background-color: #8f7171;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+}
