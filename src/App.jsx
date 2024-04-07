@@ -14,10 +14,21 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  const handleUpdateTodo = (id, inputMessage) => {
+    const newTodos = todos;
+    const findIndex = todos.findIndex((item) => item.id === id);
+    newTodos[findIndex] = {
+      ...newTodos[findIndex],
+      todo: inputMessage,
+    };
+    console.info("newTodos =>", newTodos);
+    setTodos(newTodos);
+  };
+
   return (
     <div className="app-container">
       {todos.map(({ id, todo }) => (
-        <TodoItem key={id} id={id} todo={todo} handleRemoveTodo={handleRemoveTodo} />
+        <TodoItem key={id} id={id} todo={todo} handleRemoveTodo={handleRemoveTodo} handleUpdateTodo={handleUpdateTodo} />
       ))}
       <AddTodo handleNewTodo={handleNewTodo} />
     </div>
