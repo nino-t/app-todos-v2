@@ -25,7 +25,8 @@ const AddTodo = () => {
             return true;
           }}
         >
-          <p>Your content</p>
+          <label className="label-message">Message</label><br />
+          <input type="text" placeholder="what your message" className="input-message" />
         </PureModal>
       )}
     </>
