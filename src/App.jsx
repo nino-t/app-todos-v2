@@ -5,12 +5,17 @@ import AddTodo from "./components/AddTodo";
 
 function App() {
   const [todos, setTodos] = useState(() => todoJSON.data);
+
+  const handleNewTodo = (payload) => {
+    setTodos([...todos, payload]);
+  };
+
   return (
     <div className="app-container">
       {todos.map(({ id, todo }) => (
         <TodoItem key={id} id={id} todo={todo} />
       ))}
-      <AddTodo />
+      <AddTodo handleNewTodo={handleNewTodo} />
     </div>
   );
 }
