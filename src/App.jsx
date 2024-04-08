@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoItem from "./components/TodoItem";
 import todoJSON from "./data/todos.json";
+import AddTodo from "./components/AddTodo";
 
 function App() {
   const [todos, setTodos] = useState(() => todoJSON.data);
@@ -9,7 +10,7 @@ function App() {
       {todos.map(({ id, todo }) => (
         <TodoItem key={id} id={id} todo={todo} />
       ))}
-      <button className="btn-add">New</button>
+      <AddTodo />
     </div>
   );
 }

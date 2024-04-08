@@ -1917,6 +1917,11 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-pure-modal@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-pure-modal/-/react-pure-modal-2.2.5.tgz#7ad8ad30b2176b36e7bfdcaaef7140922f811b48"
+  integrity sha512-XjmUzAdMOa0FtFZgTbVRiYBaxy5M2LdQHILlrV7FKthCiCV0XbTjr25Z1/1HR0roMrNSgBV4DGYGgwS1xh5Suw==
+
 react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
