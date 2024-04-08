@@ -7,24 +7,29 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #51cedf;
 }
 
 .app-container {
-  margin: 0 auto;
-  width: 35%;
-  height: 100vh;
-  border: 1px solid #e74c3c;
-  padding: 1rem;
-}
-
-.todo-item {
-  background-color: #eee8e89d;
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
   border-radius: 10px;
-  height: 80px;
+}
+.todo-container {
+  background-color: #9e969657;
+  border-radius: 10px;
+  padding: 10px;
+}
+.todo-item {
+  background-color: #ffffff;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .message {
@@ -32,7 +37,7 @@ body {
   height: 50px;
   border-radius: 6px;
   width: 100%;
-  margin: 10px;
+  margin: 5px;
   color: #fff;
   align-items: center;
   text-align: left;
@@ -40,47 +45,73 @@ body {
   padding-left: 5px;
 }
 
+/* S: action */
 .action {
   margin: 10px;
   display: flex;
 }
 
 .btn-edit {
-  background-color: #0099ff;
   border: 0;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 5px;
-  padding: 20px 20px;
   margin: 5px;
+  background: transparent;
 }
+
+.svg-edit {
+  width: 30px;
+}
+
 .btn-delete {
-  background-color: #ff0000;
   border: 0;
-  font-size: 15px;
-  border-radius: 5px;
-  padding: 20px 20px;
-  color: #fff;
+  background: transparent;
   margin: 5px;
 }
 
+.svg-delete {
+  width: 30px;
+}
+/* E: action */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slogan {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: -25px;
+}
+
+/* S: button add */
 .btn-add {
-  width: 100%;
-  background-color: #8f7171;
+  width: 30%;
+  background-color: #b8afaf;
   height: 50px;
   border-radius: 5px;
+  font-size: 17px;
   color: #fff;
   border: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
+.svg-add {
+  width: 25px;
+  margin: 5px 5px 5px 20px;
+}
+/* E: button add */
+
+/* S: button modal */
 .action-modal {
   display: flex;
   align-items: center;
-  justify-content: end;
 }
 
 .btn-cancel {
-  background-color: #857272;
+  background-color: #b8afaf;
   border: 0;
   font-size: 15px;
   border-radius: 5px;
@@ -90,7 +121,7 @@ body {
 }
 
 .btn-save {
-  background-color: #857272;
+  background-color: #b8afaf;
   border: 0;
   font-size: 15px;
   border-radius: 5px;
@@ -104,25 +135,42 @@ body {
   color: #fff;
   font-size: 25px;
 }
+/* E: button modal */
 
+/* S: input */
 .label-message {
   color: #857272;
 }
-
 .input-message {
   border: 0;
   outline: none;
   background-color: #d4c7c7af;
   width: 100%;
-  height: 40px;
+  height: 50px;
   border-radius: 5px;
-  color: #fff;
-}
-.input-message:focus {
-  color: #fff;
-  padding-left: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .input-message::placeholder {
-  color: #fff;
+  font-size: 15px;
 }
+
+/* E: input */
+
+/* S: modal */
+.pure-modal {
+  border-radius: 10px;
+  background-color: #eee8e8fb;
+}
+
+.pure-modal .panel-heading {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.pure-modal .panel-footer {
+  background-color: transparent;
+  border-radius: 10px;
+}
+/* E: modal */

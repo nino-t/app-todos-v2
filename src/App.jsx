@@ -27,10 +27,18 @@ function App() {
 
   return (
     <div className="app-container">
-      {todos.map(({ id, todo }) => (
-        <TodoItem key={id} id={id} todo={todo} handleRemoveTodo={handleRemoveTodo} handleUpdateTodo={handleUpdateTodo} />
-      ))}
-      <AddTodo handleNewTodo={handleNewTodo} />
+      <div className="header">
+        <div className="text-title">
+          <h1 className="title">ToDoList</h1>
+          <p className="slogan">Your Pathway to Productivity. Streamline Your Day, Achieve Your Goals.</p>
+        </div>
+        <AddTodo handleNewTodo={handleNewTodo} />
+      </div>
+      <div className="todo-container">
+        {todos.map(({ id, todo }) => (
+          <TodoItem key={id} id={id} todo={todo} handleRemoveTodo={handleRemoveTodo} handleUpdateTodo={handleUpdateTodo} />
+        ))}
+      </div>
     </div>
   );
 }
